@@ -25,12 +25,59 @@ Route::resource('/companies', 'CompanyController');
 //Location
 Route::resource('/locations', 'LocationController');
 
-//users
+//Deposit Accounts
+Route::resource('/depositaccounts', 'DepositAccountController');
+
+//Bank Accounts
+Route::resource('/bankaccounts', 'BankAccountController');
+
+//Users
 Route::resource('/users', 'UserController');
 
-//users
-Route::resource('/users', 'UserController');
+//Advance Pay
+Route::resource('/advancepays', 'AdvancePayController');
 
-//users
-Route::resource('/users', 'UserController');
+//Purchase
+//Motor Part
+Route::resource('/motorparts', 'MotorPartController');
+
+//Lubricant
+Route::resource('/lubricants', 'LubricantController');
+
+//Expense
+//Fuel Cng
+Route::resource('/fuel', 'FuelController');
+
+//Advance Pay
+Route::resource('/advancepays', 'AdvancePayController');
+
+//Advance Pay
+Route::resource('/advancepays', 'AdvancePayController');
+
+//Advance Pay
+Route::resource('/advancepays', 'AdvancePayController');
+
+//Advance Pay
+Route::resource('/advancepays', 'AdvancePayController');
+
+//Advance Pay
+Route::resource('/advancepays', 'AdvancePayController');
+
+//Advance Pay
+Route::resource('/advancepays', 'AdvancePayController');
+
+//Advance Pay
+Route::resource('/advancepays', 'AdvancePayController');
+
+//Advance Pay
+Route::resource('/advancepays', 'AdvancePayController');
+
+//Advance Pay
+Route::resource('/advancepays', 'AdvancePayController');
+
+//Advance Pay
+Route::resource('/advancepays', 'AdvancePayController');
+
+//Advance Pay
+Route::resource('/advancepays', 'AdvancePayController');
 

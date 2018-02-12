@@ -11,7 +11,7 @@
 		            <div class="body">
 		                <ol class="breadcrumb breadcrumb-bg-pink">
 		                    <li><a href="{{ url('/dashboard') }}">Home</a></li>
-		                    <li class="active">Companies</li>
+		                    <li class="active">Bank Accounts</li>
 		                </ol>
 		            </div>
 		        </div>
@@ -37,7 +37,7 @@
                                         <i class="material-icons">more_vert</i>
                                     </a>
                                     <ul class="dropdown-menu pull-right">
-                                        <li><a href="{{ url('/companies/create')}}">Create New</a></li>
+                                        <li><a href="{{ url('/bankaccounts/create')}}">Create New</a></li>
                                     </ul>
                                 </li>
                             </ul>

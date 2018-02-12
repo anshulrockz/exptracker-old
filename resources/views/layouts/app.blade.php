@@ -30,6 +30,10 @@
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="{{ asset('bsb/css/themes/all-themes.css') }}" rel="stylesheet" />
+    
+    <!-- Jquery Core Js -->
+    <script src="{{ asset('bsb/plugins/jquery/jquery.min.js') }}"></script>
+    
 </head>
 
 <body class="theme-red">
@@ -298,10 +302,9 @@
                             <li><a href="javascript:void(0); "><i class="material-icons">shopping_cart</i>Sales</a></li>
                             <li><a href="javascript:void(0); "><i class="material-icons">favorite</i>Likes</a></li>
                             <li role="seperator" class="divider"></li>
-                            <li><!--a href="javascript:void(0); "><i class="material-icons">input</i>Sign Out</a-->
-								<a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-								<i class="material-icons">input</i>
-									Sign Out
+                            <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            <i class="material-icons">input</i>
+									Log Out
 								</a>
 								<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
 									{{ csrf_field() }}
@@ -322,176 +325,148 @@
                             <span>Dashboard</span>
                         </a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="{{ url('/users') }}">
                             <i class="material-icons">accessible</i>
                             <span>Users</span>
                         </a>
-                    </li>
+                    </li>-->
                     <li>
                         <a href="javascript:void(0); " class="menu-toggle">
                             <i class="material-icons">perm_data_setting</i>
-                            <span>Masters</span>
+                            <span>Setting</span>
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="{{ url('/compnies') }}">Companies</a>
+                                <a href="{{ url('/companies') }}">Companies</a>
                             </li>
                             <li>
-                                <a href="pages/ui/animations.html">Location</a>
+                                <a href="{{ url('/locations') }}">Locations</a>
                             </li>
                             <li>
-                                <a href="pages/ui/badges.html">Deposit Accounts</a>
+                                <a href="{{ url('/users') }}">Users</a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/bankaccounts') }}">Bank Accounts</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="javascript:void(0); " class="menu-toggle">
-                            <i class="material-icons">assignment</i>
-                            <span>Forms</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/forms/basic-form-elements.html">Basic Form Elements</a>
-                            </li>
-                            <li>
-                                <a href="pages/forms/advanced-form-elements.html">Advanced Form Elements</a>
-                            </li>
-                            <li>
-                                <a href="pages/forms/form-examples.html">Form Examples</a>
-                            </li>
-                            <li>
-                                <a href="pages/forms/form-validation.html">Form Validation</a>
-                            </li>
-                            <li>
-                                <a href="pages/forms/form-wizard.html">Form Wizard</a>
-                            </li>
-                            <li>
-                                <a href="pages/forms/editors.html">Editors</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0); " class="menu-toggle">
+                        <a href="{{ url('/advancepays') }}" >
                             <i class="material-icons">view_list</i>
-                            <span>Tables</span>
+                            <span>Advance Pay</span>
                         </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/tables/normal-tables.html">Normal Tables</a>
-                            </li>
-                            <li>
-                                <a href="pages/tables/jquery-datatable.html">Jquery Datatables</a>
-                            </li>
-                            <li>
-                                <a href="pages/tables/editable-table.html">Editable Tables</a>
-                            </li>
-                        </ul>
                     </li>
                     <li>
                         <a href="javascript:void(0); " class="menu-toggle">
                             <i class="material-icons">perm_media</i>
-                            <span>Medias</span>
+                            <span>Purchase</span>
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="pages/medias/image-gallery.html">Image Gallery</a>
+                                <a href="{{ url('/motorparts') }}">Motor Parts</a>
                             </li>
                             <li>
-                                <a href="pages/medias/carousel.html">Carousel</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0); " class="menu-toggle">
-                            <i class="material-icons">pie_chart</i>
-                            <span>Charts</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/charts/morris.html">Morris</a>
-                            </li>
-                            <li>
-                                <a href="pages/charts/flot.html">Flot</a>
-                            </li>
-                            <li>
-                                <a href="pages/charts/chartjs.html">ChartJS</a>
-                            </li>
-                            <li>
-                                <a href="pages/charts/sparkline.html">Sparkline</a>
-                            </li>
-                            <li>
-                                <a href="pages/charts/jquery-knob.html">Jquery Knob</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0); " class="menu-toggle">
-                            <i class="material-icons">content_copy</i>
-                            <span>Example Pages</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/examples/sign-in.html">Sign In</a>
-                            </li>
-                            <li>
-                                <a href="pages/examples/sign-up.html">Sign Up</a>
-                            </li>
-                            <li>
-                                <a href="pages/examples/forgot-password.html">Forgot Password</a>
-                            </li>
-                            <li>
-                                <a href="pages/examples/blank.html">Blank Page</a>
-                            </li>
-                            <li>
-                                <a href="pages/examples/404.html">404 - Not Found</a>
-                            </li>
-                            <li>
-                                <a href="pages/examples/500.html">500 - Server Error</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0); " class="menu-toggle">
-                            <i class="material-icons">map</i>
-                            <span>Maps</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/maps/google.html">Google Map</a>
-                            </li>
-                            <li>
-                                <a href="pages/maps/yandex.html">YandexMap</a>
-                            </li>
-                            <li>
-                                <a href="pages/maps/jvectormap.html">jVectorMap</a>
+                                <a href="{{ url('/lubricants') }}">Lubricants</a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="javascript:void(0); " class="menu-toggle">
                             <i class="material-icons">trending_down</i>
-                            <span>Multi Level Menu</span>
+                            <span>Expense</span>
                         </a>
                         <ul class="ml-menu">
-                            <li>
-                                <a href="javascript:void(0); ">
-                                    <span>Menu Item</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0); ">
-                                    <span>Menu Item - 2</span>
-                                </a>
-                            </li>
-                            <li>
+                        	<li>
                                 <a href="javascript:void(0); " class="menu-toggle">
-                                    <span>Level - 2</span>
+                                    <span>Fuel</span>
                                 </a>
                                 <ul class="ml-menu">
                                     <li>
-                                        <a href="javascript:void(0); ">
-                                            <span>Menu Item</span>
+                                        <a href="{{ url('/fuel/cng') }} ">
+                                            <span>CNG</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ url('/fuel/petrol') }} ">
+                                            <span>Petrol</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ url('/fuel/diesel') }} ">
+                                            <span>Diesel</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="{{ url('/telephones') }}">
+                                    <span>Telephone</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/machining') }}">
+                                    <span>Machining Job</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/vehicles') }}">
+                                    <span>Vehicle</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/transportations') }}">
+                                    <span>Transportation</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/stationeries') }}">
+                                    <span>Stationery</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/furnitures') }}">
+                                    <span>Furniture</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/buildings') }}">
+                                    <span>Building</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/equipments') }}">
+                                    <span>Plant & Equipment</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/canteens') }}">
+                                    <span>Canteen</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/others') }}">
+                                    <span>Others/Mics</span>
+                                </a>
+                            </li>
+                            <!--<li>
+                                <a href="javascript:void(0); " class="menu-toggle">
+                                    <span>Fuel</span>
+                                </a>
+                                <ul class="ml-menu">
+                                    <li>
+                                        <a href="{{ url('/fuel-cng') }} ">
+                                            <span>CNG</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ url('/fuel-petrol') }} ">
+                                            <span>Petrol</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ url('/fuel-diesel') }} ">
+                                            <span>Diesel</span>
                                         </a>
                                     </li>
                                     <li>
@@ -507,33 +482,25 @@
                                         </ul>
                                     </li>
                                 </ul>
-                            </li>
+                            </li>-->
                         </ul>
                     </li>
                     <li>
-                        <a href="pages/changelogs.html">
-                            <i class="material-icons">update</i>
-                            <span>Changelogs</span>
+                        <a href="javascript:void(0); " class="menu-toggle">
+                            <i class="material-icons">assignment</i>
+                            <span>Report</span>
                         </a>
-                    </li>
-                    <li class="header">LABELS</li>
-                    <li>
-                        <a href="javascript:void(0); ">
-                            <i class="material-icons col-red">donut_large</i>
-                            <span>Important</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0); ">
-                            <i class="material-icons col-amber">donut_large</i>
-                            <span>Warning</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0); ">
-                            <i class="material-icons col-light-blue">donut_large</i>
-                            <span>Information</span>
-                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="pages/maps/google.html">Google Map</a>
+                            </li>
+                            <li>
+                                <a href="pages/maps/yandex.html">YandexMap</a>
+                            </li>
+                            <li>
+                                <a href="pages/maps/jvectormap.html">jVectorMap</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -699,12 +666,11 @@
 	@yield('content')
     </section> 
 
-    <!-- Jquery Core Js -->
-    <script src="{{ asset('bsb/plugins/jquery/jquery.min.js') }}"></script>
+    
 
     <!-- Bootstrap Core Js -->
     <script src="{{ asset('bsb/plugins/bootstrap/js/bootstrap.js') }}"></script>
-
+    
     <!-- Select Plugin Js -->
     <script src="{{ asset('bsb/plugins/bootstrap-select/js/bootstrap-select.js') }}"></script>
 
@@ -738,8 +704,6 @@
     <script src="{{ asset('bsb/js/admin.js') }}"></script>
     <script src="{{ asset('bsb/js/pages/index.js') }}"></script>
 
-    <!-- Demo Js -->
-    <script src="{{ asset('bsb/js/demo.js') }}"></script>
 </body>
 
 </html>
