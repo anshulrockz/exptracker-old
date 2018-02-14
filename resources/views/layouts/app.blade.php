@@ -341,13 +341,22 @@
                                 <a href="{{ url('/companies') }}">Companies</a>
                             </li>
                             <li>
+                                <a href="{{ url('/workshops') }}">Workshops</a>
+                            </li>
+                            <li>
                                 <a href="{{ url('/locations') }}">Locations</a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/employees') }}">Employees</a>
                             </li>
                             <li>
                                 <a href="{{ url('/users') }}">Users</a>
                             </li>
                             <li>
-                                <a href="{{ url('/bankaccounts') }}">Bank Accounts</a>
+                                <a href="{{ url('/employee-types') }}">Employee Types</a>
+                            </li>
+                        	<li>
+                                <a href="{{ url('/expense-categories') }}">Expense Categories</a>
                             </li>
                         </ul>
                     </li>

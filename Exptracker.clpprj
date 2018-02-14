@@ -2,12 +2,7 @@
 <project name="D:\xampp\htdocs\exptracker\Exptracker.clpprj">
 	<settings><PM_URL><![CDATA[http://localhost/exptracker/]]></PM_URL><PM_HOME_URL><![CDATA[http://localhost/exptracker/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
 		<file name="D:\xampp\htdocs\exptracker\routes\web.php"/>
-		<file name="D:\xampp\htdocs\exptracker\app\Http\Controllers\HomeController.php"/>
-		<file name="D:\xampp\htdocs\exptracker\resources\views\home.blade.php"/>
 		<file name="D:\xampp\htdocs\exptracker\resources\views\layouts\app.blade.php"/>
-		<file name="D:\xampp\htdocs\exptracker\app\Http\Controllers\CompanyController.php"/>
-		<file name="D:\xampp\htdocs\exptracker\resources\views\company\index.blade.php"/>
-		<file name="D:\xampp\htdocs\exptracker\resources\views\company\create.blade.php"/>
 	</lastopfiles>
 	<todoblock>
 		<todofile name="D:\xampp\htdocs\exptracker\vendor\fideloper\proxy\src\TrustProxies.php">
@@ -5530,45 +5525,54 @@
 		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\e889193bb44ce3238d22f7599e8ceddd85119fe2.php" crc="1517566051"/>
 		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\d5e20a03b73312d4c0440feb8d241982589cdfe8.php" crc="1517651373"/>
 		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\c56bd1c18966c4a7571fef75b676d5e044258959.php" crc="1517664058"/>
-		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\a4e33dfe5705388f92ddaf9ee586853278c12d12.php" crc="1517864619"/>
+		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\a4e33dfe5705388f92ddaf9ee586853278c12d12.php" crc="1518415668"/>
+		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\85b4e5591f05e924e1522263110243a73ce78170.php" crc="1518431055"/>
+		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\8261009485465252e815f00fcd70e3b93f4b828b.php" crc="1518436473"/>
 		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\78aca0c4cc5234e7e59f948d38d8aed8003a945a.php" crc="1517657766"/>
+		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\68c066ad785620a6bbefadff97362c5263700fb5.php" crc="1518434440"/>
+		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\686446faac035d8a072ad9fd044f2a87ee9993ff.php" crc="1518429922"/>
+		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\67d52264447d94336c21aea89dcaf047fe344dbb.php" crc="1518438003"/>
 		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\63cd197f12a326fdec3bd8501c9550e85ca6b488.php" crc="1517569623"/>
-		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\48c4b50241b3ed2a8ce6ec7e1a2356e995bda53f.php" crc="1517565398"/>
-		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\457699dfd90dc27feec42fce03d9b0ac44c37bdc.php" crc="1518375097"/>
+		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\4f80a7d49d5874e63ee7c3e1cca10abb013499ed.php" crc="1518432861"/>
+		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\48c4b50241b3ed2a8ce6ec7e1a2356e995bda53f.php" crc="1518419538"/>
+		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\457699dfd90dc27feec42fce03d9b0ac44c37bdc.php" crc="1518441939"/>
+		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\3f3e97c08b242a6f7142a4ed3b0988a4049dda22.php" crc="1518441977"/>
 		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\311a9560188ed7206c950328672af33fed91d4f8.php" crc="1517560117"/>
+		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\2cd2f18dbcd2d6110bb0699182f087ac9e45cee9.php" crc="1518440609"/>
 		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\20b9cc5ef9ed9e2f7d702ee75c3ec4f67f515c67.php" crc="1517569623"/>
 		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\11bbbc28f1ab34106943c00b3f074a2c1b909320.php" crc="1517657735"/>
+		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\0b9f9142bd8a6e24d591e15c53447c74a6390a05.php" crc="1518436527"/>
 		<file name="D:\xampp\htdocs\exptracker\storage\framework\views\060a76e7aa4c7979dc4fb748f9cf29b539663942.php" crc="1517560038"/>
-		<file name="D:\xampp\htdocs\exptracker\routes\web.php" crc="1518373745"/>
+		<file name="D:\xampp\htdocs\exptracker\routes\web.php" crc="1518441368"/>
 		<file name="D:\xampp\htdocs\exptracker\routes\console.php" crc="1517558965"/>
 		<file name="D:\xampp\htdocs\exptracker\routes\channels.php" crc="1517558965"/>
 		<file name="D:\xampp\htdocs\exptracker\routes\api.php" crc="1517558965"/>
-		<file name="D:\xampp\htdocs\exptracker\resources\views\user\view.blade.php" crc="1517664051"/>
-		<file name="D:\xampp\htdocs\exptracker\resources\views\user\index.blade.php" crc="1517664051"/>
+		<file name="D:\xampp\htdocs\exptracker\resources\views\user\show.blade.php" crc="1517664051"/>
+		<file name="D:\xampp\htdocs\exptracker\resources\views\user\index.blade.php" crc="1518429488"/>
 		<file name="D:\xampp\htdocs\exptracker\resources\views\user\edit.blade.php" crc="1517664051"/>
-		<file name="D:\xampp\htdocs\exptracker\resources\views\user\add.blade.php" crc="1517664051"/>
-		<file name="D:\xampp\htdocs\exptracker\resources\views\location\view.blade.php" crc="1517664051"/>
-		<file name="D:\xampp\htdocs\exptracker\resources\views\location\index.blade.php" crc="1517664051"/>
+		<file name="D:\xampp\htdocs\exptracker\resources\views\user\create.blade.php" crc="1517664051"/>
+		<file name="D:\xampp\htdocs\exptracker\resources\views\location\show.blade.php" crc="1517664051"/>
+		<file name="D:\xampp\htdocs\exptracker\resources\views\location\index.blade.php" crc="1518431020"/>
 		<file name="D:\xampp\htdocs\exptracker\resources\views\location\edit.blade.php" crc="1517664051"/>
-		<file name="D:\xampp\htdocs\exptracker\resources\views\location\add.blade.php" crc="1517664051"/>
+		<file name="D:\xampp\htdocs\exptracker\resources\views\location\create.blade.php" crc="1518432857"/>
 		<file name="D:\xampp\htdocs\exptracker\resources\views\layouts\basic.blade.php" crc="1517651369"/>
-		<file name="D:\xampp\htdocs\exptracker\resources\views\layouts\app.blade.php" crc="1518374757"/>
+		<file name="D:\xampp\htdocs\exptracker\resources\views\layouts\app.blade.php" crc="1518441074"/>
 		<file name="D:\xampp\htdocs\exptracker\resources\views\layouts\app.blade - Copy.php" crc="1517560106"/>
 		<file name="D:\xampp\htdocs\exptracker\resources\views\expense\view.blade.php" crc="1517664051"/>
 		<file name="D:\xampp\htdocs\exptracker\resources\views\expense\index.blade.php" crc="1517664051"/>
 		<file name="D:\xampp\htdocs\exptracker\resources\views\expense\edit.blade.php" crc="1517664051"/>
 		<file name="D:\xampp\htdocs\exptracker\resources\views\expense\add.blade.php" crc="1517664051"/>
-		<file name="D:\xampp\htdocs\exptracker\resources\views\depositaccount\view.blade.php" crc="1517664051"/>
-		<file name="D:\xampp\htdocs\exptracker\resources\views\depositaccount\index.blade.php" crc="1517664051"/>
-		<file name="D:\xampp\htdocs\exptracker\resources\views\depositaccount\edit.blade.php" crc="1517664051"/>
-		<file name="D:\xampp\htdocs\exptracker\resources\views\depositaccount\add.blade.php" crc="1517664051"/>
 		<file name="D:\xampp\htdocs\exptracker\resources\views\company\view.blade.php" crc="1517664051"/>
-		<file name="D:\xampp\htdocs\exptracker\resources\views\company\index.blade.php" crc="1518377310"/>
+		<file name="D:\xampp\htdocs\exptracker\resources\views\company\index.blade.php" crc="1518431006"/>
 		<file name="D:\xampp\htdocs\exptracker\resources\views\company\edit.blade.php" crc="1517664051"/>
-		<file name="D:\xampp\htdocs\exptracker\resources\views\company\create.blade.php" crc="1518378461"/>
+		<file name="D:\xampp\htdocs\exptracker\resources\views\company\create.blade.php" crc="1518431938"/>
+		<file name="D:\xampp\htdocs\exptracker\resources\views\bankaccount\view.blade.php" crc="1517664051"/>
+		<file name="D:\xampp\htdocs\exptracker\resources\views\bankaccount\index.blade.php" crc="1518434435"/>
+		<file name="D:\xampp\htdocs\exptracker\resources\views\bankaccount\edit.blade.php" crc="1517664051"/>
+		<file name="D:\xampp\htdocs\exptracker\resources\views\bankaccount\create.blade.php" crc="1518437979"/>
 		<file name="D:\xampp\htdocs\exptracker\resources\views\auth\passwords\reset.blade.php" crc="1517560106"/>
 		<file name="D:\xampp\htdocs\exptracker\resources\views\auth\passwords\email.blade.php" crc="1517560106"/>
-		<file name="D:\xampp\htdocs\exptracker\resources\views\auth\register.blade.php" crc="1517560106"/>
+		<file name="D:\xampp\htdocs\exptracker\resources\views\auth\register.blade.php" crc="1518419533"/>
 		<file name="D:\xampp\htdocs\exptracker\resources\views\auth\login.blade.php" crc="1517653122"/>
 		<file name="D:\xampp\htdocs\exptracker\resources\views\auth\login.blade - Copy.php" crc="1517652651"/>
 		<file name="D:\xampp\htdocs\exptracker\resources\views\welcome.blade.php" crc="1517864656"/>
@@ -8660,7 +8664,7 @@
 		<file name="D:\xampp\htdocs\exptracker\public\.htaccess" crc="1517558965"/>
 		<file name="D:\xampp\htdocs\exptracker\database\seeds\DatabaseSeeder.php" crc="1517558965"/>
 		<file name="D:\xampp\htdocs\exptracker\database\migrations\2014_10_12_100000_create_password_resets_table.php" crc="1517558965"/>
-		<file name="D:\xampp\htdocs\exptracker\database\migrations\2014_10_12_000000_create_users_table.php" crc="1517564745"/>
+		<file name="D:\xampp\htdocs\exptracker\database\migrations\2014_10_12_000000_create_users_table.php" crc="1518418147"/>
 		<file name="D:\xampp\htdocs\exptracker\database\factories\UserFactory.php" crc="1517558965"/>
 		<file name="D:\xampp\htdocs\exptracker\config\view.php" crc="1517558965"/>
 		<file name="D:\xampp\htdocs\exptracker\config\session.php" crc="1517558965"/>
@@ -8686,13 +8690,18 @@
 		<file name="D:\xampp\htdocs\exptracker\app\Http\Middleware\TrimStrings.php" crc="1517558965"/>
 		<file name="D:\xampp\htdocs\exptracker\app\Http\Middleware\RedirectIfAuthenticated.php" crc="1517558965"/>
 		<file name="D:\xampp\htdocs\exptracker\app\Http\Middleware\EncryptCookies.php" crc="1517558965"/>
-		<file name="D:\xampp\htdocs\exptracker\app\Http\Controllers\Auth\ResetPasswordController.php" crc="1517558965"/>
-		<file name="D:\xampp\htdocs\exptracker\app\Http\Controllers\Auth\RegisterController.php" crc="1517558965"/>
-		<file name="D:\xampp\htdocs\exptracker\app\Http\Controllers\Auth\LoginController.php" crc="1517558965"/>
+		<file name="D:\xampp\htdocs\exptracker\app\Http\Controllers\Auth\ResetPasswordController.php" crc="1518420068"/>
+		<file name="D:\xampp\htdocs\exptracker\app\Http\Controllers\Auth\RegisterController.php" crc="1518419887"/>
+		<file name="D:\xampp\htdocs\exptracker\app\Http\Controllers\Auth\LoginController.php" crc="1518420051"/>
 		<file name="D:\xampp\htdocs\exptracker\app\Http\Controllers\Auth\ForgotPasswordController.php" crc="1517558965"/>
+		<file name="D:\xampp\htdocs\exptracker\app\Http\Controllers\UserController.php" crc="1518421238"/>
+		<file name="D:\xampp\htdocs\exptracker\app\Http\Controllers\LocationController.php" crc="1518429690"/>
 		<file name="D:\xampp\htdocs\exptracker\app\Http\Controllers\HomeController.php" crc="1517560107"/>
+		<file name="D:\xampp\htdocs\exptracker\app\Http\Controllers\DepositAccountController.php" crc="1518411189"/>
 		<file name="D:\xampp\htdocs\exptracker\app\Http\Controllers\Controller.php" crc="1517558965"/>
 		<file name="D:\xampp\htdocs\exptracker\app\Http\Controllers\CompanyController.php" crc="1518376729"/>
+		<file name="D:\xampp\htdocs\exptracker\app\Http\Controllers\BankAccountController.php" crc="1518434196"/>
+		<file name="D:\xampp\htdocs\exptracker\app\Http\Controllers\AdvancePayController.php" crc="1518438286"/>
 		<file name="D:\xampp\htdocs\exptracker\app\Http\Kernel.php" crc="1517558965"/>
 		<file name="D:\xampp\htdocs\exptracker\app\Exceptions\Handler.php" crc="1517558965"/>
 		<file name="D:\xampp\htdocs\exptracker\app\Console\Kernel.php" crc="1517558965"/>

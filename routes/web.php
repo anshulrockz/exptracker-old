@@ -22,22 +22,24 @@ Route::get('/dashboard', 'HomeController@index')->name('home');
 //company
 Route::resource('/companies', 'CompanyController');
 
+//Workshop
+Route::resource('/workshops', 'WorkshopController');
+
 //Location
 Route::resource('/locations', 'LocationController');
 
-//Deposit Accounts
-Route::resource('/depositaccounts', 'DepositAccountController');
-
-//Bank Accounts
-Route::resource('/bankaccounts', 'BankAccountController');
+//Employees
+Route::resource('/employees', 'EmployeeController');
 
 //Users
 Route::resource('/users', 'UserController');
 
-//Advance Pay
-Route::resource('/advancepays', 'AdvancePayController');
+//Employee Type
+Route::resource('/employee-types', 'EmployeeTypeController');
 
-//Purchase
+//Expense Category
+Route::resource('/expense-categories', 'ExpenseCategoryController');
+
 //Motor Part
 Route::resource('/motorparts', 'MotorPartController');
 
