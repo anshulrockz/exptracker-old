@@ -13,7 +13,7 @@ class WorkshopController extends Controller
      */
     public function index()
     {
-        //
+        return view('workshop.index');
     }
 
     /**
@@ -23,7 +23,7 @@ class WorkshopController extends Controller
      */
     public function create()
     {
-        //
+        return view('workshop.create');
     }
 
     /**
@@ -45,7 +45,7 @@ class WorkshopController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('workshop.show');
     }
 
     /**
@@ -56,7 +56,7 @@ class WorkshopController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('workshop.edit');
     }
 
     /**

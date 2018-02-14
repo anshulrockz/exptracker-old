@@ -31,7 +31,8 @@
                             <h2>
                                 All
                             </h2>
-                            <ul class="header-dropdown m-r--5">
+                            <a class="btn btn-primary waves-effect header-dropdown m-r--5" href="{{ url('/companies/create')}}">Create New</a>
+                            <!--<ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
                                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                         <i class="material-icons">more_vert</i>
@@ -40,7 +41,7 @@
                                         <li><a href="{{ url('/companies/create')}}">Create New</a></li>
                                     </ul>
                                 </li>
-                            </ul>
+                            </ul>-->
                         </div>
                         <div class="body">
                             <div class="table-responsive">

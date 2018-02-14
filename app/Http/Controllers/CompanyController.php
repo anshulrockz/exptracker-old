@@ -23,7 +23,6 @@ class CompanyController extends Controller
      */
     public function create()
     {
-    	//die("Hi");
         return view('company.create');
     }
 
