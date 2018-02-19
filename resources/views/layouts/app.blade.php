@@ -22,6 +22,9 @@
     <!-- Animation Css -->
     <link href="{{ asset('bsb/plugins/animate-css/animate.css') }}" rel="stylesheet" />
 
+	<!-- Sweet Alert Css -->
+    <link href="{{ asset('bsb/plugins/sweetalert/sweetalert.css') }}" rel="stylesheet" />
+    
     <!-- Morris Chart Css-->
     <link href="{{ asset('bsb/plugins/morrisjs/morris.css') }}" rel="stylesheet" />
 
@@ -356,7 +359,24 @@
                                 <a href="{{ url('/employee-types') }}">Employee Types</a>
                             </li>
                         	<li>
-                                <a href="{{ url('/expense-categories') }}">Expense Categories</a>
+                                <a class="menu-toggle">Expense Categories</a>
+                                <ul class="ml-menu">
+                                    <li>
+                                        <a href="{{ url('/expense-categories') }} ">
+                                            <span>Expense</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ url('/subexpenses') }} ">
+                                            <span>Sub Expense</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ url('/subsubexpenses') }} ">
+                                            <span>Sub Sub Expense</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </li>
@@ -680,9 +700,6 @@
     <!-- Bootstrap Core Js -->
     <script src="{{ asset('bsb/plugins/bootstrap/js/bootstrap.js') }}"></script>
     
-    <!-- Select Plugin Js -->
-    <script src="{{ asset('bsb/plugins/bootstrap-select/js/bootstrap-select.js') }}"></script>
-
     <!-- Slimscroll Plugin Js -->
     <script src="{{ asset('bsb/plugins/jquery-slimscroll/jquery.slimscroll.js') }}"></script>
 
@@ -696,19 +713,7 @@
     <script src="{{ asset('bsb/plugins/raphael/raphael.min.js') }}"></script>
     <script src="{{ asset('bsb/plugins/morrisjs/morris.js') }}"></script>
 
-    <!-- ChartJs -->
-    <script src="{{ asset('bsb/plugins/chartjs/Chart.bundle.js') }}"></script>
-
-    <!-- Flot Charts Plugin Js -->
-    <script src="{{ asset('bsb/plugins/flot-charts/jquery.flot.js') }}"></script>
-    <script src="{{ asset('bsb/plugins/flot-charts/jquery.flot.resize.js') }}"></script>
-    <script src="{{ asset('bsb/plugins/flot-charts/jquery.flot.pie.js') }}"></script>
-    <script src="{{ asset('bsb/plugins/flot-charts/jquery.flot.categories.js') }}"></script>
-    <script src="{{ asset('bsb/plugins/flot-charts/jquery.flot.time.js') }}"></script>
-
-    <!-- Sparkline Chart Plugin Js -->
-    <script src="{{ asset('bsb/plugins/jquery-sparkline/jquery.sparkline.js') }}"></script>
-
+    
     <!-- Custom Js -->
     <script src="{{ asset('bsb/js/admin.js') }}"></script>
     <script src="{{ asset('bsb/js/pages/index.js') }}"></script>

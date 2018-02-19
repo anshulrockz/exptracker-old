@@ -301,4 +301,17 @@
         </div>
     </div>
 </div-->
+<!-- ChartJs -->
+    <script src="{{ asset('bsb/plugins/chartjs/Chart.bundle.js') }}"></script>
+
+    <!-- Flot Charts Plugin Js -->
+    <script src="{{ asset('bsb/plugins/flot-charts/jquery.flot.js') }}"></script>
+    <script src="{{ asset('bsb/plugins/flot-charts/jquery.flot.resize.js') }}"></script>
+    <script src="{{ asset('bsb/plugins/flot-charts/jquery.flot.pie.js') }}"></script>
+    <script src="{{ asset('bsb/plugins/flot-charts/jquery.flot.categories.js') }}"></script>
+    <script src="{{ asset('bsb/plugins/flot-charts/jquery.flot.time.js') }}"></script>
+
+    <!-- Sparkline Chart Plugin Js -->
+    <script src="{{ asset('bsb/plugins/jquery-sparkline/jquery.sparkline.js') }}"></script>
+
 @endsection

@@ -64,7 +64,7 @@
 				@if (Route::has('login'))
 					<div class="links">
 						@auth
-							<a class="btn btn-default btn-lg waves-effect" href="{{ url('/dashboard') }}"><b>Home</b></a>
+							<a class="btn btn-default btn-lg waves-effect" href="{{ url('/dashboard') }}"><b>Dashboard</b></a>
 							<a class="btn btn-default btn-lg waves-effect" href="{{ route('logout') }}"
 								onclick="event.preventDefault();
 										 document.getElementById('logout-form').submit();">

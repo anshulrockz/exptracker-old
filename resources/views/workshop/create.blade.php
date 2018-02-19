@@ -2,10 +2,16 @@
 
 @section('content')
 <!-- Bootstrap Select Css -->
-    <link href="{{ asset('bsb/plugins/bootstrap-select/css/bootstrap-select.css')}}" rel="stylesheet" />
-<div class="row">
+<link href="{{ asset('bsb/plugins/bootstrap-select/css/bootstrap-select.css')}}" rel="stylesheet" />
+
+<div class="row clearfix">
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="card">
+            <div class="header">
+                <h2>
+                    Workshop
+                </h2>
+            </div>
             <div class="body">
                 <ol class="breadcrumb breadcrumb-bg-pink">
                     <li><a href="{{ url('/dashboard') }}">Home</a></li>
@@ -16,25 +22,31 @@
         </div>
     </div>
 </div>
+
+<div class="row clearfix">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		@include('layouts.flashmessage')
+	</div>
+</div>
+
 <div class="row clearfix">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="card">
             <div class="header">
                 <h2>
-                    Workshop Details
+                    Details
                 </h2>
             </div>
             <div class="body">
-                <form>
+                <form method="post" action="{{ route('workshops.store') }}">
+                	{{ csrf_field() }}
                     <label for="name">Company</label>
                     <div class="form-group">
                         <select class="form-control show-tick" id="company" name="company">
                             <option value="">-- Please select company --</option>
-                            <option value="10">10</option>
-                            <option value="20">20</option>
-                            <option value="30">30</option>
-                            <option value="40">40</option>
-                            <option value="50">50</option>
+                            @foreach($company as $list)
+                            <option value="{{$list->id}}">{{$list->name}}</option>
+                            @endforeach
                         </select>
                     </div>
                     <label for="name">Name</label>
@@ -79,14 +91,13 @@
                             <textarea id="address" value="{{ old('email') }}" name="address" rows="1" class="form-control no-resize auto-growth" placeholder="Enter address of workshop (press ENTER for more lines)"></textarea>
                         </div>
                     </div>
-                    <label for="gst_no">GST Number</label>
+                    <label for="gst">GST Number</label>
                     <div class="form-group">
                         <div class="form-line">
-                            <input type="text" id="gst_no" value="{{ old('gst_no') }}" name="gst_no" class="form-control" placeholder="Enter address of bank">
+                            <input type="text" id="gst" value="{{ old('gst') }}" name="gst" class="form-control" placeholder="Enter address of bank">
                         </div>
                     </div>
-                    <button type="button" class="btn btn-primary m-t-15 waves-effect">Save</button>
-                    
+                    <button type="submit" class="btn btn-primary m-t-15 waves-effect">Save</button>
                 </form>
             </div>
         </div>

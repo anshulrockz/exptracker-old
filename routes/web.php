@@ -40,6 +40,16 @@ Route::resource('/employee-types', 'EmployeeTypeController');
 //Expense Category
 Route::resource('/expense-categories', 'ExpenseCategoryController');
 
+//Sub Expense Category
+Route::resource('/subexpenses', 'SubExpenseController');
+
+//Sub Sub Expense Category - Ajax
+Route::get('/subsubexpenses/ajax','SubSubExpenseController@subexpense_ajax');
+
+//Sub Sub Expense Category
+Route::resource('/subsubexpenses', 'SubSubExpenseController');
+
+
 //Motor Part
 Route::resource('/motorparts', 'MotorPartController');
 

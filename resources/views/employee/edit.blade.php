@@ -1,304 +1,161 @@
 @extends('layouts.app')
 
 @section('content')
-        <div class="container-fluid">
-            <div class="block-header">
-                <h2>DASHBOARD</h2>
-            </div>
 
-            <!-- Widgets -->
-            <div class="row clearfix">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-pink hover-expand-effect">
-                        <div class="icon">
-                            <i class="material-icons">playlist_add_check</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">NEW TASKS</div>
-                            <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20">125</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-cyan hover-expand-effect">
-                        <div class="icon">
-                            <i class="material-icons">help</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">NEW TICKETS</div>
-                            <div class="number count-to" data-from="0" data-to="257" data-speed="1000" data-fresh-interval="20">257</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-light-green hover-expand-effect">
-                        <div class="icon">
-                            <i class="material-icons">forum</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">NEW COMMENTS</div>
-                            <div class="number count-to" data-from="0" data-to="243" data-speed="1000" data-fresh-interval="20">243</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-orange hover-expand-effect">
-                        <div class="icon">
-                            <i class="material-icons">person_add</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">NEW VISITORS</div>
-                            <div class="number count-to" data-from="0" data-to="1225" data-speed="1000" data-fresh-interval="20">1225</div>
-                        </div>
-                    </div>
-                </div>
+<!-- Bootstrap Select Css -->
+<link href="{{ asset('bsb/plugins/bootstrap-select/css/bootstrap-select.css')}}" rel="stylesheet" />
+  
+<div class="row clearfix">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+        	<div class="header">
+                <h2>
+                    Employee
+                </h2>
             </div>
-            <!-- #END# Widgets -->
-            <!-- CPU Usage -->
-            <div class="row clearfix">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="card">
-                        <div class="header">
-                            <div class="row clearfix">
-                                <div class="col-xs-12 col-sm-6">
-                                    <h2>CPU USAGE (%)</h2>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 align-right">
-                                    <div class="switch panel-switch-btn">
-                                        <span class="m-r-10 font-12">REAL TIME</span>
-                                        <label>OFF<input type="checkbox" id="realtime" checked=""><span class="lever switch-col-cyan"></span>ON</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <ul class="header-dropdown m-r--5">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Action</a></li>
-                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Another action</a></li>
-                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Something else here</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body">
-                            <div id="real_time_chart" class="dashboard-flot-chart" style="padding: 0px; position: relative;"><canvas class="flot-base" width="949" height="275" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 949px; height: 275px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 86px; top: 258px; left: 23px; text-align: center;">0</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 86px; top: 258px; left: 111px; text-align: center;">10</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 86px; top: 258px; left: 202px; text-align: center;">20</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 86px; top: 258px; left: 293px; text-align: center;">30</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 86px; top: 258px; left: 385px; text-align: center;">40</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 86px; top: 258px; left: 476px; text-align: center;">50</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 86px; top: 258px; left: 567px; text-align: center;">60</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 86px; top: 258px; left: 659px; text-align: center;">70</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 86px; top: 258px; left: 750px; text-align: center;">80</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 86px; top: 258px; left: 841px; text-align: center;">90</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 86px; top: 258px; left: 929px; text-align: center;">100</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 245px; left: 14px; text-align: right;">0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 196px; left: 8px; text-align: right;">20</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 147px; left: 8px; text-align: right;">40</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 98px; left: 8px; text-align: right;">60</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 49px; left: 8px; text-align: right;">80</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 0px; left: 1px; text-align: right;">100</div></div></div><canvas class="flot-overlay" width="949" height="275" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 949px; height: 275px;"></canvas></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- #END# CPU Usage -->
-            <div class="row clearfix">
-                <!-- Visitors -->
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <div class="card">
-                        <div class="body bg-pink">
-                            <div class="sparkline" data-type="line" data-spot-radius="4" data-highlight-spot-color="rgb(233, 30, 99)" data-highlight-line-color="#fff" data-min-spot-color="rgb(255,255,255)" data-max-spot-color="rgb(255,255,255)" data-spot-color="rgb(255,255,255)" data-offset="90" data-width="100%" data-height="92px" data-line-width="2" data-line-color="rgba(255,255,255,0.7)" data-fill-color="rgba(0, 188, 212, 0)"><canvas width="270" height="92" style="display: inline-block; width: 270px; height: 92px; vertical-align: top;"></canvas></div>
-                            <ul class="dashboard-stat-list">
-                                <li>
-                                    TODAY
-                                    <span class="pull-right"><b>1 200</b> <small>USERS</small></span>
-                                </li>
-                                <li>
-                                    YESTERDAY
-                                    <span class="pull-right"><b>3 872</b> <small>USERS</small></span>
-                                </li>
-                                <li>
-                                    LAST WEEK
-                                    <span class="pull-right"><b>26 582</b> <small>USERS</small></span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- #END# Visitors -->
-                <!-- Latest Social Trends -->
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <div class="card">
-                        <div class="body bg-cyan">
-                            <div class="m-b--35 font-bold">LATEST SOCIAL TRENDS</div>
-                            <ul class="dashboard-stat-list">
-                                <li>
-                                    #socialtrends
-                                    <span class="pull-right">
-                                        <i class="material-icons">trending_up</i>
-                                    </span>
-                                </li>
-                                <li>
-                                    #materialdesign
-                                    <span class="pull-right">
-                                        <i class="material-icons">trending_up</i>
-                                    </span>
-                                </li>
-                                <li>#adminbsb</li>
-                                <li>#freeadmintemplate</li>
-                                <li>#bootstraptemplate</li>
-                                <li>
-                                    #freehtmltemplate
-                                    <span class="pull-right">
-                                        <i class="material-icons">trending_up</i>
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- #END# Latest Social Trends -->
-                <!-- Answered Tickets -->
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <div class="card">
-                        <div class="body bg-teal">
-                            <div class="font-bold m-b--35">ANSWERED TICKETS</div>
-                            <ul class="dashboard-stat-list">
-                                <li>
-                                    TODAY
-                                    <span class="pull-right"><b>12</b> <small>TICKETS</small></span>
-                                </li>
-                                <li>
-                                    YESTERDAY
-                                    <span class="pull-right"><b>15</b> <small>TICKETS</small></span>
-                                </li>
-                                <li>
-                                    LAST WEEK
-                                    <span class="pull-right"><b>90</b> <small>TICKETS</small></span>
-                                </li>
-                                <li>
-                                    LAST MONTH
-                                    <span class="pull-right"><b>342</b> <small>TICKETS</small></span>
-                                </li>
-                                <li>
-                                    LAST YEAR
-                                    <span class="pull-right"><b>4 225</b> <small>TICKETS</small></span>
-                                </li>
-                                <li>
-                                    ALL
-                                    <span class="pull-right"><b>8 752</b> <small>TICKETS</small></span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- #END# Answered Tickets -->
-            </div>
-
-            <div class="row clearfix">
-                <!-- Task Info -->
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                    <div class="card">
-                        <div class="header">
-                            <h2>TASK INFOS</h2>
-                            <ul class="header-dropdown m-r--5">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Action</a></li>
-                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Another action</a></li>
-                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Something else here</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body">
-                            <div class="table-responsive">
-                                <table class="table table-hover dashboard-task-infos">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Task</th>
-                                            <th>Status</th>
-                                            <th>Manager</th>
-                                            <th>Progress</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Task A</td>
-                                            <td><span class="label bg-green">Doing</span></td>
-                                            <td>John Doe</td>
-                                            <td>
-                                                <div class="progress">
-                                                    <div class="progress-bar bg-green" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100" style="width: 62%"></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Task B</td>
-                                            <td><span class="label bg-blue">To Do</span></td>
-                                            <td>John Doe</td>
-                                            <td>
-                                                <div class="progress">
-                                                    <div class="progress-bar bg-blue" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Task C</td>
-                                            <td><span class="label bg-light-blue">On Hold</span></td>
-                                            <td>John Doe</td>
-                                            <td>
-                                                <div class="progress">
-                                                    <div class="progress-bar bg-light-blue" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%"></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>Task D</td>
-                                            <td><span class="label bg-orange">Wait Approvel</span></td>
-                                            <td>John Doe</td>
-                                            <td>
-                                                <div class="progress">
-                                                    <div class="progress-bar bg-orange" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>Task E</td>
-                                            <td>
-                                                <span class="label bg-red">Suspended</span>
-                                            </td>
-                                            <td>John Doe</td>
-                                            <td>
-                                                <div class="progress">
-                                                    <div class="progress-bar bg-red" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 87%"></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- #END# Task Info -->
-                
-            </div>
-        </div>
-<!--div class="container">
-    <div class="row">
-        <div class="col-md-8 ">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
-
-                <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    
-                </div>
+            <div class="body">
+                <ol class="breadcrumb breadcrumb-bg-pink">
+                    <li><a href="{{ url('/dashboard') }}">Home</a></li>
+                    <li><a href="{{ url('/employees') }}">Employee</a></li>
+                    <li><a href="{{ url('/employees/'.$employee->id) }}">{{$employee->name}}</a></li>
+                    <li class="active">Edit</li>
+                </ol>
             </div>
         </div>
     </div>
-</div-->
+</div>
+
+<div class="row clearfix">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		@include('layouts.flashmessage')
+	</div>
+</div>
+
+<div class="row clearfix">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="header">
+                <h2>
+                    Details
+                </h2>
+            </div>
+            <div class="body">
+                <form method="post" action="{{route('employees.update',$employee->id)}}">
+                	{{ csrf_field() }}
+	                {{ method_field('PUT') }}
+                    <div class="row clearfix">
+	                	<div class="col-sm-6">
+		                    <label for="name">Name</label>
+		                    <div class="form-group">
+		                        <div class="form-line">
+		                            <input type="text" id="name" name="name" class="form-control" placeholder="Enter company name" value="{{ $employee->name }}" >
+		                        </div>
+		                    </div>
+	                    </div>
+	                    <div class="col-sm-6">
+		                    <label for="mobile">Mobile</label>
+		                    <div class="form-group">
+		                        <div class="form-line">
+		                            <input type="text" id="mobile" name="mobile" class="form-control" placeholder="Enter mobile number" value="{{ $employee->mobile }}">
+		                        </div>
+		                    </div>
+	                    </div>
+	                    <div class="col-sm-6">
+		                    <label for="phone">Phone</label>
+		                    <div class="form-group">
+		                        <div class="form-line">
+		                            <input type="text" id="phone" name="phone" class="form-control" placeholder="Enter phone number" value="{{ $employee->phone }}">
+		                        </div>
+		                    </div>
+	                    </div>
+	                    <div class="col-sm-6">
+		                    <label for="email">Email</label>
+		                    <div class="form-group">
+		                        <div class="form-line">
+		                            <input type="text" id="email" name="email" class="form-control" placeholder="Enter email id" value="{{ $employee->email }}">
+		                        </div>
+		                    </div>
+	                    </div>
+	                    <div class="col-sm-6">
+		                    <label for="dob">Date Of Birth</label>
+		                    <div class="form-group">
+		                        <div class="form-line">
+		                            <input type="text" id="dob" name="dob" class="form-control" placeholder="Enter dob" value="{{ $employee->dob }}">
+		                        </div>
+		                    </div>
+	                    </div>
+	                    
+	                    <div class="col-sm-6">
+		                    <label for="location">Location</label>
+		                    <div class="form-group">
+			                    <div class="form-line">
+			                        <select class="form-control show-tick" id="location" name="location">
+			                            <option value="">-- Please select location --</option>
+			                            @foreach($locations as $list)
+			                            <option value="{{$list->id}}" @if($list->id==$employee->location_id ) selected="selected" @endif >{{$list->name}}</option>
+			                            @endforeach
+			                        </select>
+		                    	</div>
+	                    	</div>
+	                    </div>
+	                    <div class="col-sm-6">
+		                    <label for="employee_type">Employee Type</label>
+		                    <div class="form-group">
+			                    <div class="form-line">
+			                        <select class="form-control show-tick" id="employee_type" name="employee_type">
+			                            <option value="">-- Please select location --</option>
+			                            @foreach($employee_types as $list1)
+			                            <option value="{{$list1->id}}" @if( $list1->id==$employee->employee_type ) selected="selected" @endif >{{$list1->name}}</option>
+			                            @endforeach
+			                        </select>
+		                    	</div>
+	                    	</div>
+	                    </div>
+	                    
+	                    <div class="col-sm-6">
+		                    <label for="designation">Designation</label>
+		                    <div class="form-group">
+			                    <div class="form-line">
+			                        <select class="form-control show-tick" id="designation" name="designation">
+			                            <option value="">-- Please select location --</option>
+			                            <option value="Manager">Manager</option>
+			                        </select>
+		                    	</div>
+	                    	</div>
+	                    </div>
+	                    
+	                    <div class="col-sm-6">
+		                    <label for="hod">Head Of Departmant(HOD)</label>
+		                    <div class="form-group">
+			                    <div class="form-line">
+			                        <select class="form-control show-tick" id="hod" name="hod">
+			                            <option value="">-- Please select HOD --</option>
+			                            <option value="1">-- Admin --</option>
+			                        </select>
+		                    	</div>
+	                    	</div>
+	                    </div>
+	                    <div class="col-sm-6">
+		                    	<label for="hod_self">Are You HOD?</label>
+	                			<input type="checkbox" id="hod_self" name="hod_self" value="1" class="filled-in" style="opacity:1;left:25%" @if( $employee->hod_self==1 ) checked @endif />
+	                	</div>
+	                    <div class="col-sm-12">
+		                    <label for="address">Address</label>
+		                    <div class="form-group">
+		                        <div class="form-line">
+		                            <textarea id="address" name="address" rows="1" class="form-control no-resize auto-growth" placeholder="Enter address of person(press ENTER for more lines)">{{ $employee->address }}</textarea>
+		                        </div>
+		                    </div>
+	                    </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary m-t-15 waves-effect">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Select Plugin Js -->
+<script src="{{ asset('bsb/plugins/bootstrap-select/js/bootstrap-select.js')}}"></script>
+
 @endsection
